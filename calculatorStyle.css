@@ -1,0 +1,136 @@
+html {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: Arial;
+    background-color: lightcoral;
+}
+
+h1 {
+    color: snow;
+    font-style: italic;
+    border-bottom: 0.5rem solid black;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+}
+
+#dropButton button{
+    border-radius: .3rem;
+    border: none;
+    background-color: snow;
+    color: lightblue;
+    font-size: .9rem;
+    cursor: pointer;
+    padding: .2rem;
+}
+
+.dropdownStuff {
+    display: none;
+    position: fixed;
+    border-radius: .3rem;
+    border: solid .1rem snow;
+    background-color: lightblue;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdownStuff a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2rem;
+    font-size: small;
+    color: black;
+}
+
+.show {
+    display: block;
+}
+
+.buttons {
+    text-align: center;
+    width: fit-content;
+    background-color: #f1f1f1;
+    height: 100%;
+    overflow: auto;
+    float: left;
+    border-radius: .5rem;
+    border: solid .2rem lightblue;
+}
+
+#calculator {
+    padding: .3rem;
+    border: solid lightblue;
+    width: fit-content;
+    border-radius: .5rem;
+    display: inline-block;
+    float: right;
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 370px) {
+    .buttons {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #calculator {
+        float: none;
+    }
+}
+@media screen and (min-width: 400px) {
+    #calculator {
+        float: none;
+    }
+}
+
+.buttons ul{
+    list-style: none;
+    padding: .5rem;
+}
+
+.buttons ul li {
+    padding: .5rem;
+    display: inline;
+}
+
+#calculator p {
+    border: solid lightblue;
+    border-radius: .5rem;
+    padding: 1rem;
+    color: snow;
+}
+
+#calculator button {
+    padding: 1.5rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: lightblue;
+    color: snow;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#calculator button:focus {
+    background-color: lightgrey;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    background-color: snow;
+    position: absolute;
+    width: 100%;
+}
+
+footer p {
+    font-size: small;
+    color: lightcoral;
+}

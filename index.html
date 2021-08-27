@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale= 1, maximum-scale= 1, user-scalable= no"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <link href="calculatorStyle.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" sizes="192x192" href="icon.png"/>
+    <link rel="apple-touch-icon" sizes="192x192" href="icon.png"/>
+
+    <title>Currency Calculator</title>
+
+    <h1>CURRENCY CALCULATOR</h1>
+    <p>A QUICK AND EASY WAY TO WORK OUT YOUR TRAVEL RATES!</p>
+
+</head>
+<body>
+<main id="everything">
+    <div class="buttons">
+        <ul>
+            <li>
+                <div class="dropdown">
+                    <div id="dropButton">
+                        <button onclick="view.dropdownMenu(1)" class="rateButton" id="rateButton">*EXCHANGE <br> RATES*
+                        </button>
+                    </div>
+                    <div id="rates" class="dropdownStuff">
+                        <a href="#">HOME CURRENCIES:
+                            <select id="select1">
+                                <option name="options" value="1">Euro(EUR) 🇪🇺</option>
+                                <option name="options">US Dollar(USD) 🇺🇸</option>
+                                <option name="options">Japanese Yen(JPY) 🇯🇵</option>
+                                <option name="options">Bulgarian Lev(BGN) 🇧🇬</option>
+                                <option name="options">Czech Koruna(CZK) 🇨🇿</option>
+                                <option name="options">Danish Krone(DKK) 🇩🇰</option>
+                                <option name="options">Pound Stirling(GBP) 🇬🇧</option>
+                                <option name="options">Hungarian Forint(HUF) 🇭🇺</option>
+                                <option name="options">Polish Zloty(PLN) 🇵🇱</option>
+                                <option name="options">Romanian Leu(RON) 🇷🇴</option>
+                                <option name="options">Swedish Krona(SEK) 🇸🇪</option>
+                                <option name="options">Swiss Franc(CHF) 🇨🇭</option>
+                                <option name="options">Icelandic Krona(ISK) 🇮🇸</option>
+                                <option name="options">Norwegian Krone(NOK) 🇳🇴</option>
+                                <option name="options">Croatian Kuna(HRK) 🇭🇷</option>
+                                <option name="options">Russian Rouble(RUB) 🇷🇺</option>
+                                <option name="options">Turkish Lira(TRY) 🇹🇷</option>
+                                <option name="options">Australian Dollar(AUD) 🇦🇺</option>
+                                <option name="options">Brazilian Real(BRL) 🇧🇷</option>
+                                <option name="options">Canadian Dollar(CAD) 🇨🇦</option>
+                                <option name="options">Chinese Yuan Renminbi(CNY) 🇨🇳</option>
+                                <option name="options">Hong Kong Dollar(HKD) 🇭🇰</option>
+                                <option name="options">>Indonesian Rupiah(IDR) 🇮🇩</option>
+                                <option name="options">Israeli Shekel(ILS) 🇮🇱</option>
+                                <option name="options">Indian Rupee(INR) 🇮🇳</option>
+                                <option name="options">South Korean Won(KRW) 🇰🇷</option>
+                                <option name="options">Mexican Peso(MXN) 🇲🇽</option>
+                                <option name="options">Malaysian Ringgit(MYR) 🇲🇾</option>
+                                <option name="options">New Zealand Dollar(NZD) 🇳🇿</option>
+                                <option name="options">Philippine Peso(PHP) 🇵🇭</option>
+                                <option name="options">Singapore Dollar(SGD) 🇸🇬</option>
+                                <option name="options">Thai Baht(THB) 🇹🇭</option>
+                                <option name="options">South African Rand(ZAR) 🇿🇦</option>
+                            </select>
+                        </a>
+                        <a href="#">VISITING CURRENCIES:
+                            <select id="select2">
+                                <option name="options" value="1">Euro(EUR) 🇪🇺</option>
+                                <option name="options">US Dollar(USD) 🇺🇸</option>
+                                <option name="options">Japanese Yen(JPY) 🇯🇵</option>
+                                <option name="options">Bulgarian Lev(BGN) 🇧🇬</option>
+                                <option name="options">Czech Koruna(CZK) 🇨🇿</option>
+                                <option name="options">Danish Krone(DKK) 🇩🇰</option>
+                                <option name="options">Pound Stirling(GBP) 🇬🇧</option>
+                                <option name="options">Hungarian Forint(HUF) 🇭🇺</option>
+                                <option name="options">Polish Zloty(PLN) 🇵🇱</option>
+                                <option name="options">Romanian Leu(RON) 🇷🇴</option>
+                                <option name="options">Swedish Krona(SEK) 🇸🇪</option>
+                                <option name="options">Swiss Franc(CHF) 🇨🇭</option>
+                                <option name="options">Icelandic Krona(ISK) 🇮🇸</option>
+                                <option name="options">Norwegian Krone(NOK) 🇳🇴</option>
+                                <option name="options">Croatian Kuna(HRK) 🇭🇷</option>
+                                <option name="options">Russian Rouble(RUB) 🇷🇺</option>
+                                <option name="options">Turkish Lira(TRY) 🇹🇷</option>
+                                <option name="options">Australian Dollar(AUD) 🇦🇺</option>
+                                <option name="options">Brazilian Real(BRL) 🇧🇷</option>
+                                <option name="options">Canadian Dollar(CAD) 🇨🇦</option>
+                                <option name="options">Chinese Yuan Renminbi(CNY) 🇨🇳</option>
+                                <option name="options">Hong Kong Dollar(HKD) 🇭🇰</option>
+                                <option name="options">Indonesian Rupiah(IDR) 🇮🇩</option>
+                                <option name="options">Israeli Shekel(ILS) 🇮🇱</option>
+                                <option name="options">Indian Rupee(INR) 🇮🇳</option>
+                                <option name="options">South Korean Won(KRW) 🇰🇷</option>
+                                <option name="options">Mexican Peso(MXN) 🇲🇽</option>
+                                <option name="options">Malaysian Ringgit(MYR) 🇲🇾</option>
+                                <option name="options">New Zealand Dollar(NZD) 🇳🇿</option>
+                                <option name="options">Philippine Peso(PHP) 🇵🇭</option>
+                                <option name="options">Singapore Dollar(SGD) 🇸🇬</option>
+                                <option name="options">Thai Baht(THB) 🇹🇭</option>
+                                <option name="options">South African Rand(ZAR) 🇿🇦</option>
+                            </select>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <div id="dropButton">
+                        <button onclick="view.dropdownMenu(2)" class="feeButtons">*BANK <br> FEES*</button>
+                    </div>
+                    <div id="fees" class="dropdownStuff">
+                        <form>
+                            <input type="radio" name="bankFee" class="feeButtons" id="0" value="0"> 0%
+                            <input type="radio" name="bankFee" class="feeButtons" id="2" value="2"> 2%
+                            <input type="radio" name="bankFee" class="feeButtons" id="4" value="4"> 4%
+                            <input type="radio" name="bankFee" class="feeButtons" id="6" value="6"> 6%
+                        </form>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="calculator">
+        <p id="result">AMOUNT:&nbsp</p>
+        <table>
+            <tr>
+                <td>
+                    <button class="numButton" onclick="model.setNumber('1')"> 1</button>
+                </td>
+                <td>
+                    <button class="numButton" onclick="model.setNumber('2')"> 2</button>
+                </td>
+                <td>
+                    <button class="numButton" onclick="model.setNumber('3')"> 3</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="numButton" onclick="model.setNumber('4')"> 4</button>
+                </td>
+                <td>
+                    <button class="numButton" onclick="model.setNumber('5')"> 5</button>
+                </td>
+                <td>
+                    <button class="numButton" onclick="model.setNumber('6')"> 6</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="numButton" onclick="model.setNumber('7')"> 7</button>
+                </td>
+                <td>
+                    <button class="numButton" onclick="model.setNumber('8')"> 8</button>
+                </td>
+                <td>
+                    <button class="numButton" onclick="model.setNumber('9')"> 9</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="clear"> C</button>
+                </td>
+                <td>
+                    <button class="numButton" onclick="model.setNumber('0')"> 0</button>
+                </td>
+                <td>
+                    <button id="calculate"> =</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</main>
+
+<footer>
+    <p>By Koni Watson | EBC Updated: <strong id="updated"></strong> </p>
+</footer>
+
+<script src="calculatorModel.js"></script>
+<script src="calculatorView.js"></script>
+<script src="calculatorController.js"></script>
+
+</body>
+</html>
